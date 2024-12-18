@@ -46,3 +46,10 @@ const searchCountry = async () => {
       resultsDiv.innerHTML = `<p style='color: red;'>Error : ${error.message}</p>`;
     }
   };
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    document.getElementById('buttonresearch').click();
+  }
+});
+  
