@@ -69,3 +69,11 @@ body {
     text-align: center;
     margin: 10px 0;
   }
+
+.bande {
+  height: 100px;
+  background-color: #4fd14f;
+}
+#corp {
+  height: 90vh
+}
