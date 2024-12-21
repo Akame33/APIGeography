@@ -1,0 +1,104 @@
+#presentation {
+    color :rgb(12, 108, 12);
+    text-align: center;
+}
+
+
+.menu{
+    width : 140px;
+}
+.bouton-menu {
+    background-color: green;
+    color: white;
+    width: 64px;
+    border: none;
+    border-radius: 16px;
+    padding : 10px;
+    margin-left : 20px;
+    margin-bottom: 0px;
+    cursor: pointer;
+  } 
+.menu ul {
+    display: none;
+}
+.menu:hover ul {
+    display: block;
+    background-color: green;
+    border : 1px solid rgb(12, 108, 12);
+    border-radius: 8px;
+    width: 110px;
+    margin-top : 0px;
+    margin-left : 30px;
+    
+} 
+.menu ul li {
+    display: inline;
+}
+.menu ul li button {
+    display: block;
+    border: none;
+    border-radius: 16px;
+    width: 150px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    margin-left: -40px;
+    text-align: left;
+    color: white;
+    background-color: green;
+}
+.menu ul li button:hover {
+    color : green;
+    background-color: #4fd14f;
+}
+
+
+
+#container{
+    width : 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.card {
+    background-color: #4fd14f;
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgb(12, 108, 12);
+}
+
+.clearcolor{
+    color : white;
+}
+  
+.card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+
+
+/* page d'origine */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: black;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color:green;
+}
+.bande {
+    height: 100px;
+    background-color: #4fd14f;
+}
