@@ -47,10 +47,6 @@ const searchCountry = async () => {
       const latlng = country.latlng ? `Lat: ${country.latlng[0]}, Lng: ${country.latlng[1]}` : "";
 
 
-
-
-
-
       // Afficher les résultats sur la page
       resultats.innerHTML = `
         <img src="${countryFlag}" alt="Flag of ${countryNameCommon}">

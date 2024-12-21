@@ -10,21 +10,33 @@
 </head>
 
 <body>
-  <header class="bande">
-  </header>
-  <main id="corp">
-    <h1>Country search</h1>
-    <div class="container">
-      <div class="searchBox">
-        <input type="text" id="countryInput" placeholder="Type a country...">
-        <button id="buttonresearch" onclick="searchCountry()">Research</button>
-      </div>
+  <div class="page-container">
+    <header class="bande">
+    </header>
+    <main id="corp">
+      <h1>Country search</h1>
+      <p class="presentation">Welcome to our <strong>country search feature!</strong></p>
+      <p class="presentation">This tool is designed to help you quickly find <strong>detailed information about any country</strong> by
+        simply searching its name.
+        Once you perform a search, the results will display key details about the <strong>country</strong>, including its <strong>flag</strong>, <strong> common
+        name, capital city, region, subregion, population,
+        area, official currencies, spoken languages, neighboring countries, demonym, calling codes, independence status,</strong>
+        and <strong>geographic coordinates.</strong>
+        This feature is your gateway to exploring countries from around the world.
+      </p>
+      <p id="start">Start your search</p>
+      <div class="container">
+        <div class="searchBox">
+          <input type="text" id="countryInput" placeholder="Type a country...">
+          <button id="buttonresearch" onclick="searchCountry()">Research</button>
+        </div>
 
-      <div class="results" id="results"></div>
-    </div>
-  </main>
-  <footer class="bande">
-  </footer>
+        <div class="results" id="results"></div>
+      </div>
+    </main>
+    <footer class="bande">
+    </footer>
+  </div>
 </body>
 
 </html>
