@@ -109,7 +109,7 @@ h1 {
     animation-name: Look;
     animation-duration: 0.5s;
     background-color: var(--couleur);
-    border: 1px solid var(--couleur_sombre);
+    border: 1px solid var(--couleur_sombre)};
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
@@ -119,6 +119,45 @@ h1 {
     width: 300px;
     box-shadow: 8px 8px 16px var(--couleur_sombre);
 }
+.bande {
+    height: 100px;
+    background-color: #4fd14f;
+}
+/*Header*/
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .navbar_page{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 20px; 
+   
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .navbar_page{ /*ul*/
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+  }
+  
+  .icone{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
 @keyframes Look {
     from{
         background-color: var(--couleur_clair);
