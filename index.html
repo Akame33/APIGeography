@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/search.js"></script>
 </head>
 
 <body>
@@ -26,12 +27,19 @@
   <main id="corp">
 
     <h1>API Geography</h1>
+    <div class="text_container">
+      <p class="presentation"> <strong> Welcome to API Geography, your interactive guide to exploring the world! </strong></p>
+      <p class="presentation">Discover information about all the countries, their flags, their capitals, their people, and the regions to which they belong.</p>  
+      <p class="presentation">Whether you are a geography enthusiast or simply curious, this site is for you!</p>
+    </div>
 
-    <p class="presentation"> <strong>Welcome to API Geography, your interactive guide to exploring the world!</strong></p>
-    <p class="presentation">Discover information about all the countries, their flags, their capitals, their people, and the regions to which they belong.</p>  
-    <p class="presentation">Whether you are a geography enthusiast or simply curious, this site is for you!</p>
 
-    
+    <div class="container">
+        <form class="searchBox" onsubmit="redirectToSearch(event)">
+          <input type="text" id="countryInput" placeholder="Type a country...">
+          <button id="buttonresearch">Research</button>
+        </form>
+      </div>
   </main>
 
   <footer class="bande">

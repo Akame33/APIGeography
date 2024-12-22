@@ -77,4 +77,28 @@ document.addEventListener('keydown', (event) => {
     document.getElementById('buttonresearch').click();
   }
 });
-  
+
+function redirectToSearch(event) {
+  event.preventDefault(); // Empêche le rechargement de la page
+  const country = document.getElementById("countryInput").value.trim(); // Récupère la saisie
+  if (country) {
+    // Redirige vers la page search.html avec le paramètre
+    window.location.href = `search.html?country=${encodeURIComponent(country)}`;
+  } else {
+    alert("Please enter a country name.");
+  }
+}
+// Fonction pour lire les paramètres de l'URL
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+// Exécute une recherche si un paramètre "country" est présent
+document.addEventListener("DOMContentLoaded", () => {
+  const country = getQueryParam("country");
+  if (country) {
+    document.getElementById("countryInput").value = country; // Remplit le champ de recherche
+    searchCountry(); // Lance la recherche
+  }
+});

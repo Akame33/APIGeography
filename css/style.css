@@ -24,7 +24,9 @@ body {
     margin-top: 60px;
     color:green;
   }
-
+.text_container{
+  margin-bottom: 5%;
+}
   .presentation {
     text-align: center;
     margin-left: 10%;
@@ -56,6 +58,11 @@ body {
   }
   
   .searchBox {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .searchForm {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
