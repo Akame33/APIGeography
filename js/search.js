@@ -14,7 +14,7 @@ const searchCountry = async () => {
       const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
 
       if (!response.ok) {
-        throw new Error("No country found. Check spelling.");
+        throw new Error("No country found");
       }
 
       const data = await response.json();
@@ -68,7 +68,7 @@ const searchCountry = async () => {
       `;
     } catch (error) {
       // Afficher si il y a des erreurs
-      resultats.innerHTML = `<p style='color: red;'>Error : ${error.message}</p>`;
+      resultats.innerHTML = `Error : ${error.message}</p>`;
     }
   };
 
