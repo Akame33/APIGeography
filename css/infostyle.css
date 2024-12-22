@@ -155,6 +155,7 @@ h1 {
     width: 300px;
     box-shadow: 8px 8px 16px var(--couleur_sombre);
 }
+
 .bande {
     height: 100px;
     background-color: #4fd14f;
