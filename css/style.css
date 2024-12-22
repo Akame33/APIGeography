@@ -13,7 +13,6 @@ body {
   }
 
 
-
 .page-container {
   display: flex;
   flex-direction: column;
@@ -118,4 +117,17 @@ body {
 #corp {
   flex-grow: 1; /* Étend le contenu principal */
   padding: 20px; /* Facultatif : ajoute de l'espace autour */
+}
+
+/*Header*/
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+.navbar_page{ /*ul*/
+list-style: none;
+}
+.icone{
+  width: 50px;
+  height: 50px;
 }
