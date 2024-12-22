@@ -1,4 +1,5 @@
 
+// Fonctions créeant des cartes d'infos
 const cardContainer = document.getElementById('container');
 
 async function fetchData(triFunction) {
@@ -22,10 +23,10 @@ function createCards(data) {
         card.className = 'card';
         card.innerHTML = `
             <img src="${country.flags.png}" alt="Flag of ${country.name.common}">
-            <p class="clearcolor"><strong>Country :</strong> ${country.name.common}</p>
-            <p class="clearcolor"><strong>Capital:</strong> ${country.capital ? country.capital[0] : 'N/A'}</p>
-            <p class="clearcolor"><strong>Region :</strong> ${country.region}</p>
-            <p class="clearcolor"><strong>Population :</strong> ${country.population.toLocaleString()} inhabitant</p>
+            <p><strong>Country :</strong> ${country.name.common}</p>
+            <p><strong>Capital:</strong> ${country.capital ? country.capital[0] : 'N/A'}</p>
+            <p><strong>Region :</strong> ${country.region}</p>
+            <p><strong>Population :</strong> ${country.population.toLocaleString()} inhabitant</p>
         `;
         cardContainer.appendChild(card);
     });
@@ -39,6 +40,7 @@ function Alphaorder(data){
 fetchData(Alphaorder);
 
 
+// Fonctions gérant les différents tris
 
 function Contorder(data){
     data.sort((a, b) => {

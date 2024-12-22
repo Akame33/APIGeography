@@ -1,20 +1,48 @@
-#presentation {
-    color :rgb(12, 108, 12);
-    text-align: center;
+:root {
+    --couleur: green;
+    --couleur_clair: #4fd14f;
+    --couleur_blanc: white;
+    --couleur_sombre: #0c6c0c;
 }
 
+/*basique de la page*/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color:var(--couleur);
+}
+.bande {
+    height: 100px;
+    background-color: var(--couleur_clair);
+}
+#presentation {
+    color :var(--couleur_sombre);
+    line-height: 1.8;
+    text-align: center;
+}
+#corp{
+    padding : 10px;
+}
 
+/*menu déroulant pour le tri*/
 .menu{
     width : 140px;
 }
 .bouton-menu {
-    background-color: green;
-    color: white;
-    width: 64px;
+    background-color: var(--couleur);
+    color: var(--couleur_blanc);
+    width: 60px;
     border: none;
     border-radius: 16px;
     padding : 10px;
-    margin-left : 20px;
+    margin-left : 10px;
     margin-bottom: 0px;
     cursor: pointer;
   } 
@@ -23,8 +51,8 @@
 }
 .menu:hover ul {
     display: block;
-    background-color: green;
-    border : 1px solid rgb(12, 108, 12);
+    background-color: var(--couleur);
+    border : 1px solid var(--couleur_sombre);
     border-radius: 8px;
     width: 110px;
     margin-top : 0px;
@@ -43,16 +71,16 @@
     margin-bottom:0px;
     margin-left: -40px;
     text-align: left;
-    color: white;
-    background-color: green;
+    color: var(--couleur_blanc);
+    background-color: var(--couleur);
 }
 .menu ul li button:hover {
-    color : green;
-    background-color: #4fd14f;
+    color : var(--couleur);
+    background-color: var(--couleur_clair);
 }
 
 
-
+/*les cartes d'infos*/
 #container{
     width : 90vw;
     margin-left: 5vw;
@@ -62,43 +90,58 @@
     justify-content: space-evenly;
     align-items: start;
 }
-
 .card {
-    background-color: #4fd14f;
-    border: 1px solid green;
+    background-color: var(--couleur_clair);
+    border: 1px solid var(--couleur);
     border-radius: 4px;
     padding: 10px;
     margin: 10px;
+    color : var(--couleur_blanc);
     text-align: center;
     width: 250px;
-    box-shadow: 0 4px 8px rgb(12, 108, 12);
+    box-shadow: 0 4px 8px var(--couleur_sombre);
 }
-
-.clearcolor{
-    color : white;
-}
-  
 .card img {
     max-width: 100%;
-    border-radius: 4px;
+    border-radius: 2px;
 }
-
-
-
-/* page d'origine */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: black;
-}
-h1 {
+.card:hover{
+    animation-name: Look;
+    animation-duration: 0.5s;
+    background-color: var(--couleur);
+    border: 1px solid var(--couleur_sombre);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    color : var(--couleur_clair);
     text-align: center;
-    margin-top: 20px;
-    color:green;
+    font-size: large;
+    width: 300px;
+    box-shadow: 8px 8px 16px var(--couleur_sombre);
 }
-.bande {
-    height: 100px;
-    background-color: #4fd14f;
+@keyframes Look {
+    from{
+        background-color: var(--couleur_clair);
+        border: 1px solid var(--couleur);
+        border-radius: 4px;
+        padding: 10px;
+        margin: 10px;
+        color : var(--couleur_blanc);
+        text-align: center;
+        font-size: medium;
+        width: 250px;
+        box-shadow: 0 4px 8px var(--couleur_sombre);
+    }
+    to{
+        background-color: var(--couleur);
+        border: 1px solid var(--couleur_sombre);
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px;
+        color : var(--couleur_clair);
+        text-align: center;
+        font-size: large;
+        width: 300px;
+        box-shadow: 8px 8px 16px var(--couleur_sombre);
+    }
 }
