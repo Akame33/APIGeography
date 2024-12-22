@@ -55,7 +55,7 @@ h1 {
     color:var(--couleur);
 }
 .bande {
-    height: 100px;
+    align-items: center;
     background-color: var(--couleur_clair);
 }
 #presentation {
@@ -158,11 +158,6 @@ h1 {
     box-shadow: 4px 8px 16px var(--couleur_sombre);
 }
 
-.bande {
-    height: 100px;
-    background-color: #4fd14f;
-}
-
 @keyframes Look {
     from{
         background-color: var(--couleur_clair);
@@ -194,10 +189,10 @@ h1 {
 
 
 /*Footer*/
-/* footer{
+footer{
     bottom: 0;
-  }
-  .footer_bloc{
+}
+.footer_bloc{
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -206,21 +201,21 @@ h1 {
     color:white;
     size: 1rem;
     gap: 10px;
-  }
-  footer a{
+}
+footer a{
     text-decoration: underline;
-  }
-  #copyright{
+}
+#copyright{
     font-size: 0.9rem;
     margin-top: 10px;
-  }
-  .source{
+}
+.source{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
   
-  }
-  .source p{
+}
+.source p{
     margin: 5px 0;
   
-  } */
+}
