@@ -163,3 +163,36 @@ justify-content: space-between
   height: 40px;
   margin-bottom: 10px;
 }
+
+/*Footer*/
+footer{
+  bottom: 0;
+}
+.footer_bloc{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:white;
+  size: 1rem;
+  gap: 10px;
+}
+footer a{
+  text-decoration: underline;
+}
+#copyright{
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+.source{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+
+}
+.source p{
+  margin: 5px 0;
+
+}
