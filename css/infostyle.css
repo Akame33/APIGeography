@@ -59,7 +59,7 @@ h1 {
     background-color: var(--couleur_clair);
 }
 #presentation {
-    color :var(--couleur_sombre);
+    color :#333;
     line-height: 1.8;
     text-align: center;
 }
